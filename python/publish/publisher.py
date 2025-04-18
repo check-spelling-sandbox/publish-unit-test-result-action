@@ -483,7 +483,7 @@ class Publisher:
                 except:
                     pass
 
-        # provide a reduced version to Github actions
+        # provide a reduced version to GitHub actions
         self._gha.add_to_output('json', json.dumps(data.to_reduced_dict(self._settings.json_thousands_separator), ensure_ascii=False))
 
     @staticmethod

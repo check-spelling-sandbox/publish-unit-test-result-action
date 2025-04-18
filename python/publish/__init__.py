@@ -179,7 +179,7 @@ def utf8_character_length(c: int) -> int:
     return 1
 
 
-# Github API does not like Unicode characters above 0xffff
+# GitHub API does not like Unicode characters above 0xffff
 # Those characters are replaced here by \U00000000
 def restrict_unicode(text: Optional[str]) -> Optional[str]:
     if text is None:
